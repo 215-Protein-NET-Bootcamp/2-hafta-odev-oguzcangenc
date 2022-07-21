@@ -2,7 +2,7 @@
 
 namespace EmployeeTrancking.Dto
 {
-    public class EmloyeeDto:BaseDto
+    public class EmployeeDto:BaseDto
     {
         public string Name { get; set; }
     }

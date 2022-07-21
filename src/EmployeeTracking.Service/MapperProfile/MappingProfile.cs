@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using EmployeeTracking.Data.Models;
+using EmployeeTracking.Dto.Concrete;
 using EmployeeTrancking.Dto;
 
 namespace EmployeeTracking.Service.MapperProfile
@@ -8,7 +9,12 @@ namespace EmployeeTracking.Service.MapperProfile
     {
         public MappingProfile()
         {
-            CreateMap<Employee, EmloyeeDto>().ReverseMap();
+            CreateMap<Employee, EmployeeDto>().ReverseMap();
+            CreateMap<Folder, FolderDto>().ReverseMap();
+            CreateMap<Country, CountryDto>().ReverseMap();
+            CreateMap<Department, DepartmentDto>().ReverseMap();
+
+
         }
     }
 }

@@ -7,7 +7,7 @@ using EmployeeTrancking.Dto;
 
 namespace EmployeeTracking.Service.Concrete
 {
-    public class EmployeeService : BaseService<EmloyeeDto,Employee>, IEmployeeService
+    public class EmployeeService : BaseService<EmployeeDto,Employee>, IEmployeeService
     {
         private readonly IEmployeeRepository _employeeRepository;
 

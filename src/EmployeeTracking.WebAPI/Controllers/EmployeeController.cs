@@ -1,83 +1,51 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using EmployeeTracking.Base.Response;
+using EmployeeTracking.Service.Abstract;
+using EmployeeTrancking.Dto;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeTracking.WebAPI.Controllers
 {
-    public class EmployeeController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class EmployeeController : ControllerBase
     {
-        // GET: EmployeeController
-        public ActionResult Index()
+        private readonly IEmployeeService _employeeService;
+
+        public EmployeeController(IEmployeeService employeeService)
         {
-            return View();
+            _employeeService = employeeService;
+        }
+        // GET: api/<EmployeeController>
+        [HttpGet]
+        public async Task<BaseResponse<IEnumerable<EmployeeDto>>> Get()
+        {
+            return await _employeeService.GetAllAsync();
         }
 
-        // GET: EmployeeController/Details/5
-        public ActionResult Details(int id)
+        // GET api/<EmployeeController>/5
+        [HttpGet("{id}")]
+        public string Get(int id)
         {
-            return View();
+            return "value";
         }
 
-        // GET: EmployeeController/Create
-        public ActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: EmployeeController/Create
+        // POST api/<EmployeeController>
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public async Task<BaseResponse<EmployeeDto>> Post([FromBody] EmployeeDto dto)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+           return await _employeeService.InsertAsync(dto);
         }
 
-        // GET: EmployeeController/Edit/5
-        public ActionResult Edit(int id)
+        // PUT api/<EmployeeController>/5
+        [HttpPut("{id}")]
+        public void Put(int id, [FromBody] string value)
         {
-            return View();
         }
 
-        // POST: EmployeeController/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        // DELETE api/<EmployeeController>/5
+        [HttpDelete("{id}")]
+        public void Delete(int id)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: EmployeeController/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: EmployeeController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
         }
     }
 }

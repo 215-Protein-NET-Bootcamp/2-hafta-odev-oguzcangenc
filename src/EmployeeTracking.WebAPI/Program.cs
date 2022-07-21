@@ -33,6 +33,16 @@ namespace EmployeeTracking.WebAPI
 
             builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+
+            builder.Services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            builder.Services.AddScoped<IDepartmentService, DepartmentService>();
+
+            builder.Services.AddScoped<IFolderRepository, FolderRepository>();
+            builder.Services.AddScoped<IFolderService, FolderService>();
+
+            builder.Services.AddScoped<ICountryRepository, CountryRepository>();
+            builder.Services.AddScoped<ICountryService, CountryService>();
+            
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
