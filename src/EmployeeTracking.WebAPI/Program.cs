@@ -1,3 +1,12 @@
+
+
+using EmployeeTracking.Data.Context.Concrete;
+using EmployeeTracking.Data.Repositories.Abstarct;
+using EmployeeTracking.Data.Repositories.Concrete;
+using EmployeeTracking.Service.Abstract;
+using EmployeeTracking.Service.Concrete;
+using Microsoft.EntityFrameworkCore;
+
 namespace EmployeeTracking.WebAPI
 {
     public class Program
@@ -6,16 +15,20 @@ namespace EmployeeTracking.WebAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+            builder.Services.AddDbContext<AppDbContext>(opt =>
+            {
+                opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
+            builder.Services.AddSingleton<DapperDbContext>();
+            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            builder.Services.AddScoped<IEmployeeService, EmployeeService>();
+
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();

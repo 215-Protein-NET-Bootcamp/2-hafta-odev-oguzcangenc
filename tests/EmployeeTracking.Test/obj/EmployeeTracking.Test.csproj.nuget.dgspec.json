@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj": {}
+    "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj": {
+    "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj",
+        "projectUniqueName": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj",
         "projectName": "EmployeeTracking.Test",
-        "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj",
+        "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj",
         "packagesPath": "C:\\Users\\ouzdev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\EmployeeTracking.Test\\obj\\",
+        "outputPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
