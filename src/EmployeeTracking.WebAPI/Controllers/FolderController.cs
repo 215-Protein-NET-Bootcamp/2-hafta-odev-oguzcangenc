@@ -17,36 +17,35 @@ namespace EmployeeTracking.WebAPI.Controllers
         {
             _folderService = folderService;
         }
-        // GET: api/<FolderController>
         [HttpGet]
         public async Task<BaseResponse<IEnumerable<FolderDto>>> Get()
         {
             return await _folderService.GetAllAsync();
         }
 
-        // GET api/<FolderController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<BaseResponse<FolderDto>> Get(int id)
         {
-            return "value";
+            return await _folderService.GetByIdAsync(id);
         }
 
-        // POST api/<FolderController>
         [HttpPost]
-        public void Post([FromBody] string value)
+        public async Task<BaseResponse<FolderDto>> Post([FromBody] FolderDto folderDto)
         {
+            return await _folderService.InsertAsync(folderDto);
         }
 
-        // PUT api/<FolderController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<BaseResponse<FolderDto>> Put(int id, [FromBody] FolderDto folderDto)
         {
+            return await _folderService.UpdateAsync(id, folderDto);
         }
 
-        // DELETE api/<FolderController>/5
+      
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<BaseResponse<FolderDto>> Delete(int id)
         {
+            return await _folderService.RemoveAsync(id);
         }
     }
 }

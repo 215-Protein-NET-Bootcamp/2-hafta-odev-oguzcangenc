@@ -15,37 +15,34 @@ namespace EmployeeTracking.WebAPI.Controllers
         {
             _employeeService = employeeService;
         }
-        // GET: api/<EmployeeController>
         [HttpGet]
         public async Task<BaseResponse<IEnumerable<EmployeeDto>>> Get()
         {
             return await _employeeService.GetAllAsync();
         }
 
-        // GET api/<EmployeeController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        public async Task<BaseResponse<EmployeeDto>> Get(int id)
         {
-            return "value";
+            return await _employeeService.GetByIdAsync(id);
         }
 
-        // POST api/<EmployeeController>
         [HttpPost]
         public async Task<BaseResponse<EmployeeDto>> Post([FromBody] EmployeeDto dto)
         {
-           return await _employeeService.InsertAsync(dto);
+            return await _employeeService.InsertAsync(dto);
         }
 
-        // PUT api/<EmployeeController>/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public async Task<BaseResponse<EmployeeDto>> Put(int id, [FromBody] EmployeeDto employeeDto)
         {
+            return await _employeeService.UpdateAsync(id, employeeDto);
         }
 
-        // DELETE api/<EmployeeController>/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task<BaseResponse<EmployeeDto>> Delete(int id)
         {
+            return await _employeeService.RemoveAsync(id);
         }
     }
 }

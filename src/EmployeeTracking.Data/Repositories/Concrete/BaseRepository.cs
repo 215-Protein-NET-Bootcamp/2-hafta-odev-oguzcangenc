@@ -26,7 +26,7 @@ namespace EmployeeTracking.Data.Repositories.Concrete
 
         public async Task<IEnumerable<Entity>> GetAllAsync()
         {
-            return await entities.AsNoTracking().ToListAsync();
+            return await entities.AsNoTracking().Where(x=>x.IsDeleted==false).ToListAsync();
         }
 
         public virtual async Task<Entity> GetByIdAsync(int entityId)
