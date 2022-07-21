@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeTracking.Base\EmployeeTracking.Base.csproj" />
+  </ItemGroup>
+
 </Project>

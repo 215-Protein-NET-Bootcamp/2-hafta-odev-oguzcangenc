@@ -1,10 +1,13 @@
 
 
+using AutoMapper;
 using EmployeeTracking.Data.Context.Concrete;
+using EmployeeTracking.Data.Repositories;
 using EmployeeTracking.Data.Repositories.Abstarct;
 using EmployeeTracking.Data.Repositories.Concrete;
 using EmployeeTracking.Service.Abstract;
 using EmployeeTracking.Service.Concrete;
+using EmployeeTracking.Service.MapperProfile;
 using Microsoft.EntityFrameworkCore;
 
 namespace EmployeeTracking.WebAPI
@@ -14,16 +17,23 @@ namespace EmployeeTracking.WebAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-
+            // mapper
+            var mapperConfig = new MapperConfiguration(cfg =>
+            {
+                cfg.AddProfile(new MappingProfile());
+            });
+            builder.Services.AddSingleton(mapperConfig.CreateMapper());
             builder.Services.AddControllers();
             builder.Services.AddDbContext<AppDbContext>(opt =>
             {
                 opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+            //Dapper
             builder.Services.AddSingleton<DapperDbContext>();
+
             builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             builder.Services.AddScoped<IEmployeeService, EmployeeService>();
-
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
