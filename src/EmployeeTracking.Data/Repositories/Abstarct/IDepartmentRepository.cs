@@ -9,5 +9,6 @@ namespace EmployeeTracking.Data.Repositories.Abstarct
 {
     public interface IDepartmentRepository:IBaseRepository<Department>
     {
+
     }
 }

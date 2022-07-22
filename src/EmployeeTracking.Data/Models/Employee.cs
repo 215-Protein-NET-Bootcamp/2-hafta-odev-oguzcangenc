@@ -6,7 +6,9 @@ namespace EmployeeTracking.Data.Models
     {
         public string Name { get; set; }
         public int DepartmentId { get; set; }
-        public int FolderId { get; set; }
         public Department Department { get; set; }
+        public virtual ICollection<Folder> Folders { get; set; }
+
+
     }
 }

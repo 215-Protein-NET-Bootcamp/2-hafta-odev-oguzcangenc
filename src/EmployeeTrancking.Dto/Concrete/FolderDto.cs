@@ -10,5 +10,6 @@ namespace EmployeeTracking.Dto.Concrete
     public class FolderDto:BaseDto
     {
         public string AccessType { get; set; }
+        public int EmployeeId { get; set; }
     }
 }

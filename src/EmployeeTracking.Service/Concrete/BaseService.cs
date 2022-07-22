@@ -35,11 +35,22 @@ namespace EmployeeTracking.Service.Concrete
 
         public virtual async Task<BaseResponse<Dto>> GetByIdAsync(int id)
         {
-            var tempEntity = await baseRepository.GetByIdAsync(id);
-            // Mapping Entity to Resource
-            var result = Mapper.Map<Entity, Dto>(tempEntity);
+            try
+            {
+                var tempEntity = await baseRepository.GetByIdAsync(id);
+                // Mapping Entity to Resource
+                var result = Mapper.Map<Entity, Dto>(tempEntity);
+                return new BaseResponse<Dto>(result);
 
-            return new BaseResponse<Dto>(result);
+            }
+            catch (Exception ex)
+            {
+
+                throw new MessageResultException("Id_NoData", ex);
+
+            }
+
+
         }
 
         public virtual async Task<BaseResponse<Dto>> InsertAsync(Dto insertResource)
@@ -90,7 +101,7 @@ namespace EmployeeTracking.Service.Concrete
                     return new BaseResponse<Dto>("NoData");
                 // Update infomation
                 Mapper.Map(updateResource, tempEntity);
-
+                baseRepository.Update(tempEntity);
                 await UnitOfWork.CompleteAsync();
                 // Mapping
                 var resource = Mapper.Map<Entity, Dto>(tempEntity);

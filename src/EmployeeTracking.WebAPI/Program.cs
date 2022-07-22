@@ -9,6 +9,7 @@ using EmployeeTracking.Service.Abstract;
 using EmployeeTracking.Service.Concrete;
 using EmployeeTracking.Service.MapperProfile;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
 
 namespace EmployeeTracking.WebAPI
 {
@@ -23,7 +24,8 @@ namespace EmployeeTracking.WebAPI
                 cfg.AddProfile(new MappingProfile());
             });
             builder.Services.AddSingleton(mapperConfig.CreateMapper());
-            builder.Services.AddControllers();
+            builder.Services.AddControllers().AddJsonOptions(x =>
+                            x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
             builder.Services.AddDbContext<AppDbContext>(opt =>
             {
                 opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));

@@ -1,7 +1,10 @@
 ﻿using EmployeeTracking.Base.Response;
+using EmployeeTracking.Data.Models;
+using EmployeeTracking.Dto.Concrete;
 using EmployeeTracking.Service.Abstract;
 using EmployeeTrancking.Dto;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace EmployeeTracking.WebAPI.Controllers
 {
@@ -22,10 +25,13 @@ namespace EmployeeTracking.WebAPI.Controllers
         }
 
         [HttpGet("{id}")]
-        public async Task<BaseResponse<EmployeeDto>> Get(int id)
+        public async Task<BaseResponse<Employee>> Get(int id)
         {
-            return await _employeeService.GetByIdAsync(id);
+          var res=  await _employeeService.GetEmployeeDetail(id);
+            return res;
         }
+        
+     
 
         [HttpPost]
         public async Task<BaseResponse<EmployeeDto>> Post([FromBody] EmployeeDto dto)

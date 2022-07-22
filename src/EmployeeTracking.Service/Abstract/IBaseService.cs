@@ -10,5 +10,6 @@ namespace EmployeeTracking.Service.Abstract
         Task<BaseResponse<Dto>> InsertAsync(Dto insertResource);
         Task<BaseResponse<Dto>> UpdateAsync(int id, Dto updateResource);
         Task<BaseResponse<Dto>> RemoveAsync(int id);
+       
     }
 }
