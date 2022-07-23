@@ -1,1 +1,1 @@
-# 2-hafta-odev-ouzdev
+# 2-hafta-odev-oguzcangenc
