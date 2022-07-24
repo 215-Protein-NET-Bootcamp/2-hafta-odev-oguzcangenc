@@ -26,7 +26,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\EmployeeTracking.Base\EmployeeTracking.Base.csproj" />
-    <ProjectReference Include="..\EmployeeTrancking.Dto\EmployeeTracking.Dto.csproj" />
   </ItemGroup>
 
 </Project>

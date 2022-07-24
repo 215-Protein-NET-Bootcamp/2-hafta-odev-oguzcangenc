@@ -1,6 +1,7 @@
 ﻿using EmployeeTracking.Base.Response;
 using EmployeeTracking.Dto.Concrete;
 using EmployeeTracking.Service.Abstract;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
@@ -11,9 +12,11 @@ namespace EmployeeTracking.WebAPI.Controllers
     public class CountryController : ControllerBase
     {
         private readonly ICountryService _countryService;
+        private IValidator<CountryDto> _validator;
 
-        public CountryController(ICountryService countryService)
+        public CountryController(ICountryService countryService, IValidator<CountryDto> validator)
         {
+            _validator = validator;
             _countryService = countryService;
         }
         // GET: api/<CountryController>

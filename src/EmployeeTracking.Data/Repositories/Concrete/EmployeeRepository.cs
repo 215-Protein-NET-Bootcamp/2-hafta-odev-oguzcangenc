@@ -1,7 +1,6 @@
 ﻿using EmployeeTracking.Data.Context.Concrete;
 using EmployeeTracking.Data.Models;
 using EmployeeTracking.Data.Repositories.Abstarct;
-using EmployeeTracking.Dto.Concrete;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

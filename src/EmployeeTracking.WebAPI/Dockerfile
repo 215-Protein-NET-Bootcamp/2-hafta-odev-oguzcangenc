@@ -1,5 +1,3 @@
-#See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
-
 FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
 WORKDIR /app
 EXPOSE 80
@@ -8,6 +6,10 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["EmployeeTracking.WebAPI/EmployeeTracking.WebAPI.csproj", "EmployeeTracking.WebAPI/"]
+COPY ["EmployeeTracking.Dto/EmployeeTracking.Dto.csproj", "EmployeeTracking.Dto/"]
+COPY ["EmployeeTracking.Base/EmployeeTracking.Base.csproj", "EmployeeTracking.Base/"]
+COPY ["EmployeeTracking.Service/EmployeeTracking.Service.csproj", "EmployeeTracking.Service/"]
+COPY ["EmployeeTracking.Data/EmployeeTracking.Data.csproj", "EmployeeTracking.Data/"]
 RUN dotnet restore "EmployeeTracking.WebAPI/EmployeeTracking.WebAPI.csproj"
 COPY . .
 WORKDIR "/src/EmployeeTracking.WebAPI"

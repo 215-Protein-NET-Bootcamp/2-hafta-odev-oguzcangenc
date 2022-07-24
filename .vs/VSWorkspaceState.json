@@ -1,12 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\src",
-    "\\src\\EmployeeTracking.Data",
-    "\\src\\EmployeeTracking.Data\\Context",
-    "\\src\\EmployeeTracking.Data\\Context\\Concrete",
-    "\\src\\EmployeeTracking.WebAPI"
+    ""
   ],
-  "SelectedNode": "\\src\\EmployeeTracking.sln",
+  "SelectedNode": "\\EmployeeTracking.sln",
   "PreviewInSolutionExplorer": false
 }

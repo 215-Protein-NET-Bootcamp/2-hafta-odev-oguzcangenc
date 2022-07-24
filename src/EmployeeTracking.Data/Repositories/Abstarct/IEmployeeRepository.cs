@@ -1,5 +1,4 @@
 ﻿using EmployeeTracking.Data.Models;
-using EmployeeTracking.Dto.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;

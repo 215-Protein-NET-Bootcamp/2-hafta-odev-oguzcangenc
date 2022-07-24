@@ -1,6 +1,5 @@
 ﻿using EmployeeTracking.Base.Response;
 using EmployeeTracking.Data.Models;
-using EmployeeTracking.Dto.Concrete;
 using EmployeeTracking.Service.Abstract;
 using EmployeeTrancking.Dto;
 using Microsoft.AspNetCore.Mvc;

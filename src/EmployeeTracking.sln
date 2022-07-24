@@ -6,18 +6,21 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeTracking.Base", "EmployeeTracking.Base\EmployeeTracking.Base.csproj", "{7F19AA7D-272C-40FC-B2AA-1D51F07EC7AE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0D36815A-5FF4-4BBA-943B-5DFB5E4334DE}"
+	ProjectSection(SolutionItems) = preProject
+		EmployeeTracking.WebAPI\.gitignore = EmployeeTracking.WebAPI\.gitignore
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{2A96FE36-CDD1-476E-AB9A-52112BE87E61}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeTracking.Data", "EmployeeTracking.Data\EmployeeTracking.Data.csproj", "{0CF31FF3-98B2-418C-AD4F-7C2328185386}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeTracking.Dto", "EmployeeTrancking.Dto\EmployeeTracking.Dto.csproj", "{33B96D42-8974-46AF-B50B-E8B364EC83CD}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeTracking.Test", "..\tests\EmployeeTracking.Test\EmployeeTracking.Test.csproj", "{5CB1ACB1-03B9-4C26-ACAA-AA2D40E2215F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeTracking.Service", "EmployeeTracking.Service\EmployeeTracking.Service.csproj", "{6E091AB2-2DD9-4D2A-BE88-8EA1239EE016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeTracking.WebAPI", "EmployeeTracking.WebAPI\EmployeeTracking.WebAPI.csproj", "{00624CE1-95A9-4E77-AB19-24E143AD639A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeTracking.WebAPI", "EmployeeTracking.WebAPI\EmployeeTracking.WebAPI.csproj", "{00624CE1-95A9-4E77-AB19-24E143AD639A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeTracking.Dto", "EmployeeTracking.Dto\EmployeeTracking.Dto.csproj", "{52EBFA3D-7E9A-4CD6-8E1A-727659BCDAFB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +36,6 @@ Global
 		{0CF31FF3-98B2-418C-AD4F-7C2328185386}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CF31FF3-98B2-418C-AD4F-7C2328185386}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CF31FF3-98B2-418C-AD4F-7C2328185386}.Release|Any CPU.Build.0 = Release|Any CPU
-		{33B96D42-8974-46AF-B50B-E8B364EC83CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33B96D42-8974-46AF-B50B-E8B364EC83CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33B96D42-8974-46AF-B50B-E8B364EC83CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33B96D42-8974-46AF-B50B-E8B364EC83CD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5CB1ACB1-03B9-4C26-ACAA-AA2D40E2215F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5CB1ACB1-03B9-4C26-ACAA-AA2D40E2215F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CB1ACB1-03B9-4C26-ACAA-AA2D40E2215F}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -49,6 +48,10 @@ Global
 		{00624CE1-95A9-4E77-AB19-24E143AD639A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00624CE1-95A9-4E77-AB19-24E143AD639A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00624CE1-95A9-4E77-AB19-24E143AD639A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52EBFA3D-7E9A-4CD6-8E1A-727659BCDAFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52EBFA3D-7E9A-4CD6-8E1A-727659BCDAFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52EBFA3D-7E9A-4CD6-8E1A-727659BCDAFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52EBFA3D-7E9A-4CD6-8E1A-727659BCDAFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,10 +59,10 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{7F19AA7D-272C-40FC-B2AA-1D51F07EC7AE} = {0D36815A-5FF4-4BBA-943B-5DFB5E4334DE}
 		{0CF31FF3-98B2-418C-AD4F-7C2328185386} = {0D36815A-5FF4-4BBA-943B-5DFB5E4334DE}
-		{33B96D42-8974-46AF-B50B-E8B364EC83CD} = {0D36815A-5FF4-4BBA-943B-5DFB5E4334DE}
 		{5CB1ACB1-03B9-4C26-ACAA-AA2D40E2215F} = {2A96FE36-CDD1-476E-AB9A-52112BE87E61}
 		{6E091AB2-2DD9-4D2A-BE88-8EA1239EE016} = {0D36815A-5FF4-4BBA-943B-5DFB5E4334DE}
 		{00624CE1-95A9-4E77-AB19-24E143AD639A} = {0D36815A-5FF4-4BBA-943B-5DFB5E4334DE}
+		{52EBFA3D-7E9A-4CD6-8E1A-727659BCDAFB} = {0D36815A-5FF4-4BBA-943B-5DFB5E4334DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C651FFB0-2927-45F5-A638-D7B83F13F6BE}

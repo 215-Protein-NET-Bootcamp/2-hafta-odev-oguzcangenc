@@ -43,7 +43,7 @@ namespace EmployeeTracking.Data.Repositories.Concrete
 
         public async Task InsertAsync(Country entity)
         {
-            var query = $"INSERT INTO \"Countries\" (\"Name\",\"DepartmentId\",\"Continent\",\"Currency\",\"CreatedAt\",\"IsDeleted\",\"Available\") VALUES (@name,@continent,@currency,@department_id,@created_at,@is_deleted,@available)";
+            var query = $"INSERT INTO \"Countries\" (\"Name\",\"Continent\",\"Currency\",\"DepartmentId\",\"CreatedAt\",\"IsDeleted\",\"Available\") VALUES (@name,@continent,@currency,@department_id,@created_at,@is_deleted,@available)";
 
             var parameters = new DynamicParameters();
             parameters.Add("name", entity.Name, DbType.String);

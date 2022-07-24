@@ -1,14 +1,17 @@
-
-
 using AutoMapper;
 using EmployeeTracking.Data.Context.Concrete;
 using EmployeeTracking.Data.Repositories;
 using EmployeeTracking.Data.Repositories.Abstarct;
 using EmployeeTracking.Data.Repositories.Concrete;
+using EmployeeTracking.Dto.Concrete;
 using EmployeeTracking.Service.Abstract;
 using EmployeeTracking.Service.Concrete;
 using EmployeeTracking.Service.MapperProfile;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;
+using Serilog;
+using System.Reflection;
 using System.Text.Json.Serialization;
 
 namespace EmployeeTracking.WebAPI
@@ -18,18 +21,31 @@ namespace EmployeeTracking.WebAPI
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Host.UseSerilog((ctx, lc) => lc
+                        .WriteTo.Console()
+                        .WriteTo.File(@"logs\log.txt", rollingInterval: RollingInterval.Day));
             // mapper
             var mapperConfig = new MapperConfiguration(cfg =>
             {
                 cfg.AddProfile(new MappingProfile());
             });
+
             builder.Services.AddSingleton(mapperConfig.CreateMapper());
-            builder.Services.AddControllers().AddJsonOptions(x =>
-                            x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
+
+            builder.Services.AddControllers()
+                .AddJsonOptions(x =>
+                            x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles).
+          AddFluentValidation(c =>
+                c.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly()));
+
+
+
+
             builder.Services.AddDbContext<AppDbContext>(opt =>
             {
                 opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+
             //Dapper
             builder.Services.AddSingleton<DapperDbContext>();
 
@@ -44,7 +60,7 @@ namespace EmployeeTracking.WebAPI
 
             builder.Services.AddScoped<ICountryRepository, CountryRepository>();
             builder.Services.AddScoped<ICountryService, CountryService>();
-            
+
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();

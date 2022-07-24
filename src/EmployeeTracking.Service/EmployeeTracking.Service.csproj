@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -9,11 +9,12 @@
   <ItemGroup>
     <ProjectReference Include="..\EmployeeTracking.Base\EmployeeTracking.Base.csproj" />
     <ProjectReference Include="..\EmployeeTracking.Data\EmployeeTracking.Data.csproj" />
-    <ProjectReference Include="..\EmployeeTrancking.Dto\EmployeeTracking.Dto.csproj" />
+    <ProjectReference Include="..\EmployeeTracking.Dto\EmployeeTracking.Dto.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.1.0" />
   </ItemGroup>
 
 </Project>
