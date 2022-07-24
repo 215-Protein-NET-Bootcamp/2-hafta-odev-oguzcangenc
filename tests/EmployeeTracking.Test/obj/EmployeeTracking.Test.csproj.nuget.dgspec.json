@@ -4,14 +4,14 @@
     "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj": {
+    "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Base\\EmployeeTracking.Base.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj",
-        "projectName": "EmployeeTracking.Test",
-        "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj",
+        "projectUniqueName": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Base\\EmployeeTracking.Base.csproj",
+        "projectName": "EmployeeTracking.Base",
+        "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Base\\EmployeeTracking.Base.csproj",
         "packagesPath": "C:\\Users\\ouzdev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\obj\\",
+        "outputPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Base\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -42,6 +42,410 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Data\\EmployeeTracking.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Data\\EmployeeTracking.Data.csproj",
+        "projectName": "EmployeeTracking.Data",
+        "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Data\\EmployeeTracking.Data.csproj",
+        "packagesPath": "C:\\Users\\ouzdev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ouzdev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Base\\EmployeeTracking.Base.csproj": {
+                "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Base\\EmployeeTracking.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "Microsoft.AspNetCore.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Dto\\EmployeeTracking.Dto.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Dto\\EmployeeTracking.Dto.csproj",
+        "projectName": "EmployeeTracking.Dto",
+        "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Dto\\EmployeeTracking.Dto.csproj",
+        "packagesPath": "C:\\Users\\ouzdev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Dto\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ouzdev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Base\\EmployeeTracking.Base.csproj": {
+                "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Base\\EmployeeTracking.Base.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Service\\EmployeeTracking.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Service\\EmployeeTracking.Service.csproj",
+        "projectName": "EmployeeTracking.Service",
+        "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Service\\EmployeeTracking.Service.csproj",
+        "packagesPath": "C:\\Users\\ouzdev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ouzdev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Base\\EmployeeTracking.Base.csproj": {
+                "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Base\\EmployeeTracking.Base.csproj"
+              },
+              "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Data\\EmployeeTracking.Data.csproj": {
+                "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Data\\EmployeeTracking.Data.csproj"
+              },
+              "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Dto\\EmployeeTracking.Dto.csproj": {
+                "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Dto\\EmployeeTracking.Dto.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.WebAPI\\EmployeeTracking.WebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.WebAPI\\EmployeeTracking.WebAPI.csproj",
+        "projectName": "EmployeeTracking.WebAPI",
+        "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.WebAPI\\EmployeeTracking.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\ouzdev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.WebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ouzdev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Dto\\EmployeeTracking.Dto.csproj": {
+                "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Dto\\EmployeeTracking.Dto.csproj"
+              },
+              "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Service\\EmployeeTracking.Service.csproj": {
+                "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Service\\EmployeeTracking.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.1.2, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.15.1, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj",
+        "projectName": "EmployeeTracking.Test",
+        "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\EmployeeTracking.Test.csproj",
+        "packagesPath": "C:\\Users\\ouzdev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\tests\\EmployeeTracking.Test\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ouzdev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Data\\EmployeeTracking.Data.csproj": {
+                "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Data\\EmployeeTracking.Data.csproj"
+              },
+              "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.WebAPI\\EmployeeTracking.WebAPI.csproj": {
+                "projectPath": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.WebAPI\\EmployeeTracking.WebAPI.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.AspNetCore.Mvc.Testing": {
               "target": "Package",
@@ -55,21 +459,21 @@
               "target": "Package",
               "version": "[17.1.0, )"
             },
-            "NUnit": {
-              "target": "Package",
-              "version": "[3.13.3, )"
-            },
-            "NUnit.Analyzers": {
-              "target": "Package",
-              "version": "[3.3.0, )"
-            },
-            "NUnit3TestAdapter": {
-              "target": "Package",
-              "version": "[4.2.1, )"
-            },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[3.1.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [

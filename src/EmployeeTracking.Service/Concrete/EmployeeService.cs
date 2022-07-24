@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using EmployeeTracking.Base;
 using EmployeeTracking.Base.Response;
 using EmployeeTracking.Data.Models;
 using EmployeeTracking.Data.Repositories;
@@ -22,6 +23,22 @@ namespace EmployeeTracking.Service.Concrete
 
         public async Task<BaseResponse<Employee>> GetEmployeeDetail(int id)
         {
+            try
+            {
+                var tempEntity = await _employeeRepository.GetByIdEmployeeDetailAsync(id);
+                // Mapping Entity to Resource
+
+                if (tempEntity == null)
+                {
+                    return new BaseResponse<Employee>(false);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw new MessageResultException("Id_NoData", ex);
+
+            }
             return new BaseResponse<Employee>(await _employeeRepository.GetByIdEmployeeDetailAsync(id));
         }
     }

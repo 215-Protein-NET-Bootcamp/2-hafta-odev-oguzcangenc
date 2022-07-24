@@ -18,36 +18,62 @@ namespace EmployeeTracking.WebAPI.Controllers
             _employeeService = employeeService;
         }
         [HttpGet]
-        public async Task<BaseResponse<IEnumerable<EmployeeDto>>> Get()
+        public async Task<IActionResult> Get()
         {
-            return await _employeeService.GetAllAsync();
+            var response = await _employeeService.GetAllAsync();
+            if (!response.Success)
+            {
+                return NotFound();
+            }
+
+            return Ok(response);
         }
 
         [HttpGet("{id}")]
-        public async Task<BaseResponse<Employee>> Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-          var res=  await _employeeService.GetEmployeeDetail(id);
-            return res;
+            var res = await _employeeService.GetEmployeeDetail(id);
+            if (!res.Success)
+            {
+                return NotFound();
+            }
+            return Ok(res);
         }
-        
-     
 
         [HttpPost]
-        public async Task<BaseResponse<EmployeeDto>> Post([FromBody] EmployeeDto dto)
+        public async Task<IActionResult> Post([FromBody] EmployeeDto dto)
         {
-            return await _employeeService.InsertAsync(dto);
+
+            var response = await _employeeService.InsertAsync(dto);
+
+            if (!response.Success)
+            {
+                return BadRequest();
+            }
+
+            return Ok(response);
         }
 
         [HttpPut("{id}")]
-        public async Task<BaseResponse<EmployeeDto>> Put(int id, [FromBody] EmployeeDto employeeDto)
+        public async Task<IActionResult> Put(int id, [FromBody] EmployeeDto employeeDto)
         {
-            return await _employeeService.UpdateAsync(id, employeeDto);
+            var response = await _employeeService.UpdateAsync(id, employeeDto);
+            if (!response.Success)
+            {
+                return BadRequest();
+            }
+            return Ok(response);
         }
 
         [HttpDelete("{id}")]
-        public async Task<BaseResponse<EmployeeDto>> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            return await _employeeService.RemoveAsync(id);
+            var response = await _employeeService.RemoveAsync(id);
+            if (!response.Success)
+            {
+                return BadRequest();
+            }
+            return Ok(response);
         }
     }
 }

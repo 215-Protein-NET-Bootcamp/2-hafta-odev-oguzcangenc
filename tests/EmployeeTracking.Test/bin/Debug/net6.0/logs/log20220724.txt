@@ -1,0 +1,327 @@
+2022-07-24 21:28:38.572 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee - -
+2022-07-24 21:28:38.660 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:28:38.668 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:28:38.680 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[System.Collections.Generic.IEnumerable`1[EmployeeTrancking.Dto.EmployeeDto]]] Get() on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:28:38.761 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 21:28:39.003 +03:00 [INF] Executed action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 232.2892ms.
+2022-07-24 21:28:39.012 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[System.Collections.Generic.IEnumerable`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-24 21:28:39.038 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 353.2431ms
+2022-07-24 21:28:39.039 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:28:39.043 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee - - - 200 - application/json;+charset=utf-8 479.3242ms
+2022-07-24 21:31:43.551 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 21:31:43.606 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:31:43.613 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:31:43.633 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:31:43.908 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 21:31:43.930 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 290.7922ms
+2022-07-24 21:31:43.931 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:31:43.934 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/1 - - - 200 - application/json;+charset=utf-8 387.0965ms
+2022-07-24 21:32:07.287 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/9 - -
+2022-07-24 21:32:07.349 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:32:07.356 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:32:07.373 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:32:07.639 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 21:32:07.657 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 279.5098ms
+2022-07-24 21:32:07.659 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:32:07.662 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/9 - - - 200 - application/json;+charset=utf-8 379.5882ms
+2022-07-24 21:32:32.243 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/8855 - -
+2022-07-24 21:32:32.298 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:32:32.305 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:32:32.324 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:32:32.602 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 21:32:32.620 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 291.4033ms
+2022-07-24 21:32:32.622 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:32:32.625 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/8855 - - - 200 - application/json;+charset=utf-8 386.8251ms
+2022-07-24 21:33:34.665 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/8855 - -
+2022-07-24 21:33:34.738 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:33:34.745 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:33:34.763 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:33:34.869 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 21:33:35.166 +03:00 [INF] Executed action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 289.9692ms.
+2022-07-24 21:33:35.172 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 21:33:35.193 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 425.3553ms
+2022-07-24 21:33:35.193 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:33:35.198 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/8855 - - - 200 - application/json;+charset=utf-8 538.8237ms
+2022-07-24 21:34:13.361 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/emplosasyee/8855 - -
+2022-07-24 21:34:13.414 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:34:13.420 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/emplosasyee/8855 - - - 404 - - 63.0802ms
+2022-07-24 21:41:13.766 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 21:41:13.830 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:41:13.837 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:41:13.855 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:41:13.969 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 21:41:40.207 +03:00 [INF] Executed action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 26229.8436ms.
+2022-07-24 21:41:40.212 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 21:41:40.234 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 26374.0307ms
+2022-07-24 21:41:40.234 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:41:40.238 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/1 - - - 200 - application/json;+charset=utf-8 26479.3384ms
+2022-07-24 21:43:21.956 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 21:43:22.017 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:43:22.023 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:43:22.041 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:43:22.328 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 21:43:22.347 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 300.9144ms
+2022-07-24 21:43:22.348 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:43:22.352 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/1 - - - 200 - application/json;+charset=utf-8 399.1729ms
+2022-07-24 21:44:03.857 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 21:44:03.926 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:44:03.933 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:44:03.953 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:44:04.067 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 21:45:45.330 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 21:45:45.386 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:45:45.393 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:45:45.411 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:45:45.683 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 21:45:45.701 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 285.3851ms
+2022-07-24 21:45:45.702 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:45:45.705 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/1 - - - 200 - application/json;+charset=utf-8 378.9157ms
+2022-07-24 21:46:05.052 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 21:46:05.123 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:46:05.132 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:46:05.152 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:46:05.275 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 21:47:30.832 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee - -
+2022-07-24 21:47:30.902 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:47:30.911 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:47:30.921 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[System.Collections.Generic.IEnumerable`1[EmployeeTrancking.Dto.EmployeeDto]]] Get() on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:47:30.983 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 21:47:31.211 +03:00 [INF] Executed action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 220.318ms.
+2022-07-24 21:47:31.217 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[System.Collections.Generic.IEnumerable`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-24 21:47:31.243 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 318.0808ms
+2022-07-24 21:47:31.244 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:47:31.247 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee - - - 200 - application/json;+charset=utf-8 423.2923ms
+2022-07-24 21:55:34.201 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 21:55:34.271 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:55:34.280 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:55:34.302 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:55:34.620 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 21:55:34.640 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 332.309ms
+2022-07-24 21:55:34.642 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:55:34.645 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/1 - - - 200 - application/json;+charset=utf-8 448.5099ms
+2022-07-24 21:55:45.826 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee - -
+2022-07-24 21:55:45.884 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 21:55:45.890 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:55:45.898 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[System.Collections.Generic.IEnumerable`1[EmployeeTrancking.Dto.EmployeeDto]]] Get() on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:55:46.088 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[System.Collections.Generic.IEnumerable`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-24 21:55:46.122 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 219.1238ms
+2022-07-24 21:55:46.124 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:55:46.127 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee - - - 200 - application/json;+charset=utf-8 305.0578ms
+2022-07-24 21:55:46.142 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 21:55:46.144 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:55:46.154 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 21:55:46.276 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 21:55:46.277 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 122.3496ms
+2022-07-24 21:55:46.277 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 21:55:46.277 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/1 - - - 200 - application/json;+charset=utf-8 135.3963ms
+2022-07-24 22:01:51.902 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 22:01:51.978 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:01:51.985 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:01:52.004 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTracking.Data.Models.Employee]] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:01:52.112 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 22:01:57.792 +03:00 [INF] Executed action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 5673.0398ms.
+2022-07-24 22:01:57.798 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 22:02:00.747 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 8738.4347ms
+2022-07-24 22:02:00.747 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:02:00.751 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/1 - - - 200 - application/json;+charset=utf-8 8856.4576ms
+2022-07-24 22:05:34.226 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 22:05:34.283 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:05:34.290 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:05:34.307 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:05:34.623 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-07-24 22:05:34.639 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 326.3575ms
+2022-07-24 22:05:34.641 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:05:34.644 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/1 - - - 404 - application/problem+json;+charset=utf-8 424.3601ms
+2022-07-24 22:08:11.896 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 22:08:11.960 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:08:11.968 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:08:11.986 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:08:12.094 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 22:08:28.391 +03:00 [INF] Executed action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 16288.8426ms.
+2022-07-24 22:08:28.398 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-07-24 22:08:28.415 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 16424.5111ms
+2022-07-24 22:08:28.415 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:08:28.418 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/1 - - - 404 - application/problem+json;+charset=utf-8 16529.7258ms
+2022-07-24 22:09:12.435 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee - -
+2022-07-24 22:09:12.504 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:09:12.512 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:09:12.524 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[System.Collections.Generic.IEnumerable`1[EmployeeTrancking.Dto.EmployeeDto]]] Get() on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:09:12.586 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 22:09:42.989 +03:00 [INF] Executed action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 30373.8211ms.
+2022-07-24 22:09:42.995 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[System.Collections.Generic.IEnumerable`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-24 22:09:43.022 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 30492.6578ms
+2022-07-24 22:09:43.022 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:09:43.026 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee - - - 200 - application/json;+charset=utf-8 30597.4482ms
+2022-07-24 22:15:14.643 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/1 - -
+2022-07-24 22:15:14.706 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:15:14.713 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:15:14.733 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:15:14.846 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 22:15:55.817 +03:00 [INF] Executed action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 40950.9747ms.
+2022-07-24 22:15:55.824 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-07-24 22:15:55.840 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 41102.7542ms
+2022-07-24 22:15:55.840 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:15:55.844 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/1 - - - 404 - application/problem+json;+charset=utf-8 41208.4027ms
+2022-07-24 22:16:25.468 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/2 - -
+2022-07-24 22:16:25.533 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:16:25.539 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:16:25.558 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:16:25.663 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 22:16:26.665 +03:00 [INF] Executed action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 994.0195ms.
+2022-07-24 22:16:26.671 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-07-24 22:16:26.688 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 1125.8772ms
+2022-07-24 22:16:26.688 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:16:26.692 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/2 - - - 404 - application/problem+json;+charset=utf-8 1229.7891ms
+2022-07-24 22:16:39.348 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/2 - -
+2022-07-24 22:16:39.403 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:16:39.411 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:16:39.428 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:16:39.704 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-07-24 22:16:39.718 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 285.7874ms
+2022-07-24 22:16:39.720 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:16:39.723 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/2 - - - 404 - application/problem+json;+charset=utf-8 378.6214ms
+2022-07-24 22:18:09.466 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/2 - -
+2022-07-24 22:18:09.540 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:18:09.548 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:18:09.565 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:18:09.823 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 22:18:09.848 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 279.3301ms
+2022-07-24 22:18:09.850 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:18:09.852 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/2 - - - 200 - application/json;+charset=utf-8 390.6637ms
+2022-07-24 22:25:16.529 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/employee application/json 138
+2022-07-24 22:25:16.624 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:25:16.632 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI)'
+2022-07-24 22:25:16.662 +03:00 [INF] Route matched with {action = "Post", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTrancking.Dto.EmployeeDto]] Post(EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:25:16.817 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-24 22:25:25.999 +03:00 [INF] Executed action method EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 9174.9237ms.
+2022-07-24 22:25:26.005 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 22:25:26.023 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI) in 9356.0163ms
+2022-07-24 22:25:26.024 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI)'
+2022-07-24 22:25:26.028 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/employee application/json 138 - 200 - application/json;+charset=utf-8 9507.2027ms
+2022-07-24 22:26:41.995 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/employee application/json 138
+2022-07-24 22:26:42.066 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:26:42.074 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI)'
+2022-07-24 22:26:42.092 +03:00 [INF] Route matched with {action = "Post", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:26:42.214 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 22:26:42.229 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI) in 133.5066ms
+2022-07-24 22:26:42.231 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI)'
+2022-07-24 22:26:42.233 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/employee application/json 138 - 200 - application/json;+charset=utf-8 242.0076ms
+2022-07-24 22:26:50.684 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/employee application/json 138
+2022-07-24 22:26:50.684 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee - -
+2022-07-24 22:26:50.749 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:26:50.749 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 22:26:50.756 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 22:26:50.756 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI)'
+2022-07-24 22:26:50.765 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[System.Collections.Generic.IEnumerable`1[EmployeeTrancking.Dto.EmployeeDto]]] Get() on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:26:50.770 +03:00 [INF] Route matched with {action = "Post", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 22:26:50.922 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 22:26:50.938 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI) in 163.0446ms
+2022-07-24 22:26:50.940 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI)'
+2022-07-24 22:26:50.943 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/employee application/json 138 - 200 - application/json;+charset=utf-8 263.1218ms
+2022-07-24 23:43:31.195 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/employee/1 - -
+2022-07-24 23:43:31.268 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 23:43:31.276 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Delete (EmployeeTracking.WebAPI)'
+2022-07-24 23:43:31.294 +03:00 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:43:31.516 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 23:43:31.537 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Delete (EmployeeTracking.WebAPI) in 238.5115ms
+2022-07-24 23:43:31.539 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Delete (EmployeeTracking.WebAPI)'
+2022-07-24 23:43:31.542 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/employee/1 - - - 200 - application/json;+charset=utf-8 350.6140ms
+2022-07-24 23:44:46.171 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145
+2022-07-24 23:44:46.247 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 23:44:46.254 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:44:46.273 +03:00 [INF] Route matched with {action = "Put", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[EmployeeTrancking.Dto.EmployeeDto]] Put(Int32, EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:44:46.531 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 23:44:46.546 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI) in 268.2986ms
+2022-07-24 23:44:46.548 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:44:46.550 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145 - 200 - application/json;+charset=utf-8 383.3733ms
+2022-07-24 23:46:53.308 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/employee/2515 application/json 145
+2022-07-24 23:46:53.372 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 23:46:53.379 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:46:53.399 +03:00 [INF] Route matched with {action = "Put", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:46:53.629 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-07-24 23:46:53.642 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI) in 238.803ms
+2022-07-24 23:46:53.644 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:46:53.646 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/employee/2515 application/json 145 - 400 - application/problem+json;+charset=utf-8 342.5964ms
+2022-07-24 23:47:15.257 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/employee/6 application/json 145
+2022-07-24 23:47:15.329 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 23:47:15.336 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:47:15.354 +03:00 [INF] Route matched with {action = "Put", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:47:15.588 +03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-07-24 23:47:15.600 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI) in 240.6179ms
+2022-07-24 23:47:15.601 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:47:15.604 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/employee/6 application/json 145 - 400 - application/problem+json;+charset=utf-8 351.2476ms
+2022-07-24 23:47:45.044 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/employee/5 application/json 145
+2022-07-24 23:47:45.120 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 23:47:45.127 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:47:45.146 +03:00 [INF] Route matched with {action = "Put", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:47:45.406 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI) in 255.169ms
+2022-07-24 23:47:45.408 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:47:45.410 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/employee/5 application/json 145 - 200 - - 369.8815ms
+2022-07-24 23:48:19.640 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145
+2022-07-24 23:48:19.707 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 23:48:19.714 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:48:19.731 +03:00 [INF] Route matched with {action = "Put", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:48:19.989 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 23:48:20.005 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI) in 269.1271ms
+2022-07-24 23:48:20.007 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:48:20.010 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145 - 200 - application/json;+charset=utf-8 374.8455ms
+2022-07-24 23:50:08.332 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145
+2022-07-24 23:50:08.406 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 23:50:08.413 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:50:08.431 +03:00 [INF] Route matched with {action = "Put", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:50:08.699 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 23:50:08.714 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI) in 278.9266ms
+2022-07-24 23:50:08.716 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:50:08.718 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145 - 200 - application/json;+charset=utf-8 391.9000ms
+2022-07-24 23:54:56.692 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145
+2022-07-24 23:54:56.750 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 23:54:56.758 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:54:56.776 +03:00 [INF] Route matched with {action = "Put", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:54:57.040 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 23:54:57.055 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI) in 273.8142ms
+2022-07-24 23:54:57.056 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-24 23:54:57.059 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145 - 200 - application/json;+charset=utf-8 372.6166ms
+2022-07-24 23:54:57.071 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee - -
+2022-07-24 23:54:57.072 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 23:54:57.075 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[System.Collections.Generic.IEnumerable`1[EmployeeTrancking.Dto.EmployeeDto]]] Get() on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:54:57.131 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[System.Collections.Generic.IEnumerable`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-24 23:54:57.132 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 56.7663ms
+2022-07-24 23:54:57.132 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 23:54:57.133 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee - - - 200 - application/json;+charset=utf-8 61.8704ms
+2022-07-24 23:54:57.134 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/employee application/json 138
+2022-07-24 23:54:57.134 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI)'
+2022-07-24 23:54:57.137 +03:00 [INF] Route matched with {action = "Post", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:54:57.163 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 23:54:57.164 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI) in 26.8248ms
+2022-07-24 23:54:57.164 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI)'
+2022-07-24 23:54:57.164 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/employee application/json 138 - 200 - application/json;+charset=utf-8 29.8714ms
+2022-07-24 23:54:57.166 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/employee/2 - -
+2022-07-24 23:54:57.166 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 23:54:57.168 +03:00 [INF] Route matched with {action = "Get", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:54:57.251 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Data.Models.Employee, EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 23:54:57.256 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI) in 87.873ms
+2022-07-24 23:54:57.257 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 23:54:57.257 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/employee/2 - - - 200 - application/json;+charset=utf-8 90.9838ms
+2022-07-24 23:54:57.258 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/employee/1 - -
+2022-07-24 23:54:57.258 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Delete (EmployeeTracking.WebAPI)'
+2022-07-24 23:54:57.260 +03:00 [INF] Route matched with {action = "Delete", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-24 23:54:57.264 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 23:54:57.264 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Delete (EmployeeTracking.WebAPI) in 3.6714ms
+2022-07-24 23:54:57.264 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Delete (EmployeeTracking.WebAPI)'
+2022-07-24 23:54:57.264 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/employee/1 - - - 200 - application/json;+charset=utf-8 6.5161ms
+2022-07-24 23:57:35.979 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/folder - -
+2022-07-24 23:57:36.058 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 23:57:36.066 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.FolderController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 23:57:36.078 +03:00 [INF] Route matched with {action = "Get", controller = "Folder"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller EmployeeTracking.WebAPI.Controllers.FolderController (EmployeeTracking.WebAPI).
+2022-07-24 23:57:36.295 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[System.Collections.Generic.IEnumerable`1[[EmployeeTracking.Dto.Concrete.FolderDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-24 23:57:36.316 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.FolderController.Get (EmployeeTracking.WebAPI) in 233.7605ms
+2022-07-24 23:57:36.318 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.FolderController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 23:57:36.321 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/folder - - - 200 - application/json;+charset=utf-8 347.7828ms
+2022-07-24 23:58:26.871 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/folder/2 - -
+2022-07-24 23:58:26.945 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-24 23:58:26.952 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.FolderController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 23:58:26.969 +03:00 [INF] Route matched with {action = "Get", controller = "Folder"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.FolderController (EmployeeTracking.WebAPI).
+2022-07-24 23:58:27.161 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Dto.Concrete.FolderDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-24 23:58:27.182 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.FolderController.Get (EmployeeTracking.WebAPI) in 209.3555ms
+2022-07-24 23:58:27.184 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.FolderController.Get (EmployeeTracking.WebAPI)'
+2022-07-24 23:58:27.187 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/folder/2 - - - 200 - application/json;+charset=utf-8 319.8350ms

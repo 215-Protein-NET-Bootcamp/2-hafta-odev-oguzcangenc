@@ -1,1 +1,7 @@
-{ }
+{
+  "EmployeeTracking.Base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Base",
+  "EmployeeTracking.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Data",
+  "EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Dto",
+  "EmployeeTracking.Service, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.Service",
+  "EmployeeTracking.WebAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\ouzdev\\Desktop\\EmployeeTracking\\src\\EmployeeTracking.WebAPI"
+}

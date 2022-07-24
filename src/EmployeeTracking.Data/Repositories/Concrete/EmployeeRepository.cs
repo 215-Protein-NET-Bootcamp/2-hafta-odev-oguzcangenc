@@ -21,6 +21,7 @@ namespace EmployeeTracking.Data.Repositories.Concrete
 
         public async Task<Employee> GetByIdEmployeeDetailAsync(int entityId)
         {
+           
             var response = await _context.Employees.Where(e => e.Id == entityId)
                                                   .Include(employee => employee.Folders)
                                                   .Include(employee => employee.Department)

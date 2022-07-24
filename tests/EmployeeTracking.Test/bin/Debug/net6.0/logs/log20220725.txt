@@ -1,0 +1,188 @@
+2022-07-25 00:00:07.010 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/folder application/json 132
+2022-07-25 00:00:07.095 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:00:07.102 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.FolderController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:00:07.121 +03:00 [INF] Route matched with {action = "Post", controller = "Folder"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.FolderDto) on controller EmployeeTracking.WebAPI.Controllers.FolderController (EmployeeTracking.WebAPI).
+2022-07-25 00:00:07.240 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Dto.Concrete.FolderDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-25 00:00:07.257 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.FolderController.Post (EmployeeTracking.WebAPI) in 130.9513ms
+2022-07-25 00:00:07.258 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.FolderController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:00:07.261 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/folder application/json 132 - 200 - application/json;+charset=utf-8 254.3979ms
+2022-07-25 00:01:43.979 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/employee/1 application/json 125
+2022-07-25 00:01:44.053 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:01:44.060 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-25 00:01:44.078 +03:00 [INF] Route matched with {action = "Put", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-25 00:01:44.162 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-07-25 00:01:44.176 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI) in 93.266ms
+2022-07-25 00:01:44.178 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-25 00:01:44.181 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/employee/1 application/json 125 - 400 - application/problem+json;+charset=utf-8 205.9517ms
+2022-07-25 00:02:08.052 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/folder/1 application/json 125
+2022-07-25 00:02:08.123 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:02:08.131 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.FolderController.Put (EmployeeTracking.WebAPI)'
+2022-07-25 00:02:08.149 +03:00 [INF] Route matched with {action = "Put", controller = "Folder"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, EmployeeTracking.Dto.Concrete.FolderDto) on controller EmployeeTracking.WebAPI.Controllers.FolderController (EmployeeTracking.WebAPI).
+2022-07-25 00:02:08.407 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Dto.Concrete.FolderDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-25 00:02:08.422 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.FolderController.Put (EmployeeTracking.WebAPI) in 267.9298ms
+2022-07-25 00:02:08.423 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.FolderController.Put (EmployeeTracking.WebAPI)'
+2022-07-25 00:02:08.426 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/folder/1 application/json 125 - 200 - application/json;+charset=utf-8 378.7647ms
+2022-07-25 00:03:02.807 +03:00 [INF] Request starting HTTP/1.1 DELETE http://localhost/api/folder/1 - -
+2022-07-25 00:03:02.887 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:03:02.896 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.FolderController.Delete (EmployeeTracking.WebAPI)'
+2022-07-25 00:03:02.914 +03:00 [INF] Route matched with {action = "Delete", controller = "Folder"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller EmployeeTracking.WebAPI.Controllers.FolderController (EmployeeTracking.WebAPI).
+2022-07-25 00:03:03.146 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Dto.Concrete.FolderDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-25 00:03:03.166 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.FolderController.Delete (EmployeeTracking.WebAPI) in 248.1969ms
+2022-07-25 00:03:03.168 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.FolderController.Delete (EmployeeTracking.WebAPI)'
+2022-07-25 00:03:03.171 +03:00 [INF] Request finished HTTP/1.1 DELETE http://localhost/api/folder/1 - - - 200 - application/json;+charset=utf-8 368.8943ms
+2022-07-25 00:10:46.218 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/department - -
+2022-07-25 00:10:46.319 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:10:46.325 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Get (EmployeeTracking.WebAPI)'
+2022-07-25 00:10:46.337 +03:00 [INF] Route matched with {action = "Get", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[EmployeeTracking.Base.Response.BaseResponse`1[System.Collections.Generic.IEnumerable`1[EmployeeTracking.Dto.Concrete.DepartmentDto]]] Get() on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:10:46.699 +03:00 [INF] Executing ObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[System.Collections.Generic.IEnumerable`1[[EmployeeTracking.Dto.Concrete.DepartmentDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-07-25 00:10:46.721 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Get (EmployeeTracking.WebAPI) in 379.1605ms
+2022-07-25 00:10:46.722 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Get (EmployeeTracking.WebAPI)'
+2022-07-25 00:10:46.726 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/department - - - 200 - application/json;+charset=utf-8 512.9490ms
+2022-07-25 00:16:19.798 +03:00 [INF] Request starting HTTP/1.1 GET http://localhost/api/department/1 - -
+2022-07-25 00:16:19.878 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:16:19.885 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Get (EmployeeTracking.WebAPI)'
+2022-07-25 00:16:19.906 +03:00 [INF] Route matched with {action = "Get", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get(Int32) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:16:20.327 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Dto.Concrete.DepartmentDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-25 00:16:20.351 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Get (EmployeeTracking.WebAPI) in 439.8959ms
+2022-07-25 00:16:20.354 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Get (EmployeeTracking.WebAPI)'
+2022-07-25 00:16:20.357 +03:00 [INF] Request finished HTTP/1.1 GET http://localhost/api/department/1 - - - 200 - application/json;+charset=utf-8 563.1659ms
+2022-07-25 00:17:50.277 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 123
+2022-07-25 00:17:50.351 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:17:50.359 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:17:50.379 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:17:50.742 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 358.3638ms
+2022-07-25 00:17:50.744 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:17:50.745 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 123 - 200 - - 472.5623ms
+2022-07-25 00:19:33.867 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 123
+2022-07-25 00:19:33.934 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:19:33.942 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:19:33.960 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:19:34.087 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-25 00:20:52.250 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 114
+2022-07-25 00:20:52.324 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:20:52.331 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:20:52.353 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:20:52.457 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-07-25 00:20:52.478 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 118.3856ms
+2022-07-25 00:20:52.481 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:20:52.485 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 114 - 400 - application/problem+json;+charset=utf-8 242.2954ms
+2022-07-25 00:21:17.679 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 114
+2022-07-25 00:21:17.752 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:21:17.759 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:21:17.779 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:21:17.861 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-07-25 00:21:17.876 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 92.0283ms
+2022-07-25 00:21:17.879 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:21:17.892 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 114 - 400 - application/problem+json;+charset=utf-8 219.4032ms
+2022-07-25 00:21:47.970 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 114
+2022-07-25 00:21:48.034 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:21:48.040 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:21:48.058 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:21:48.150 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-07-25 00:21:48.169 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 105.5495ms
+2022-07-25 00:21:48.172 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:21:48.176 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 114 - 400 - application/problem+json;+charset=utf-8 212.0851ms
+2022-07-25 00:22:58.037 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 114
+2022-07-25 00:22:58.105 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:22:58.114 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:22:58.130 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:22:58.208 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-07-25 00:22:58.222 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 85.0748ms
+2022-07-25 00:22:58.223 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:22:58.226 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 114 - 400 - application/problem+json;+charset=utf-8 193.8809ms
+2022-07-25 00:23:22.459 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 114
+2022-07-25 00:23:22.523 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:23:22.533 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:23:22.562 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:23:22.646 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2022-07-25 00:23:22.660 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 92.6237ms
+2022-07-25 00:23:22.663 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:23:22.675 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 114 - 400 - application/problem+json;+charset=utf-8 221.6463ms
+2022-07-25 00:23:51.864 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 123
+2022-07-25 00:23:51.939 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:23:51.949 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:23:51.980 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:23:52.120 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-25 00:37:09.846 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 123
+2022-07-25 00:37:09.924 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:37:09.931 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:37:09.949 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:37:10.305 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 352.6733ms
+2022-07-25 00:37:10.307 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:37:10.308 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 123 - 200 - - 466.4297ms
+2022-07-25 00:37:23.419 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 123
+2022-07-25 00:37:23.497 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:37:23.504 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:37:23.523 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:37:23.642 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-25 00:38:54.724 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 123
+2022-07-25 00:38:54.794 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:38:54.802 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:38:54.818 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:38:55.200 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 377.3194ms
+2022-07-25 00:38:55.202 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:38:55.203 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 123 - 200 - - 482.6788ms
+2022-07-25 00:39:25.132 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 123
+2022-07-25 00:39:25.205 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:39:25.211 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:39:25.230 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:39:25.367 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-25 00:39:59.284 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 34049.9913ms
+2022-07-25 00:39:59.286 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:39:59.289 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 123 - 200 - - 34164.8350ms
+2022-07-25 00:41:27.826 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 123
+2022-07-25 00:41:27.893 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:41:27.900 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:41:27.916 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:41:28.279 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 358.5209ms
+2022-07-25 00:41:28.281 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:41:28.282 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 123 - 200 - - 462.2669ms
+2022-07-25 00:42:34.599 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 122
+2022-07-25 00:42:34.668 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:42:34.675 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:42:34.692 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:42:35.058 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 361.6686ms
+2022-07-25 00:42:35.060 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:42:35.061 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 122 - 200 - - 467.6416ms
+2022-07-25 00:43:04.201 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145
+2022-07-25 00:43:04.201 +03:00 [INF] Request starting HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145
+2022-07-25 00:43:04.259 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:43:04.259 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:43:04.265 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-25 00:43:04.265 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-25 00:43:04.282 +03:00 [INF] Route matched with {action = "Put", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-25 00:43:04.282 +03:00 [INF] Route matched with {action = "Put", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-25 00:43:04.571 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-25 00:43:04.571 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTrancking.Dto.EmployeeDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-25 00:43:04.587 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI) in 300.1625ms
+2022-07-25 00:43:04.587 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI) in 300.1628ms
+2022-07-25 00:43:04.589 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-25 00:43:04.589 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Put (EmployeeTracking.WebAPI)'
+2022-07-25 00:43:04.593 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145 - 200 - application/json;+charset=utf-8 395.6944ms
+2022-07-25 00:43:04.593 +03:00 [INF] Request finished HTTP/1.1 PUT http://localhost/api/employee/1 application/json 145 - 200 - application/json;+charset=utf-8 395.6940ms
+2022-07-25 00:43:04.606 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/employee application/json 138
+2022-07-25 00:43:04.608 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.EmployeeController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:43:04.610 +03:00 [INF] Route matched with {action = "Post", controller = "Employee"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTrancking.Dto.EmployeeDto) on controller EmployeeTracking.WebAPI.Controllers.EmployeeController (EmployeeTracking.WebAPI).
+2022-07-25 00:43:30.428 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 122
+2022-07-25 00:43:30.498 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:43:30.507 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:43:30.524 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:43:30.904 +03:00 [INF] Executing OkObjectResult, writing value of type 'EmployeeTracking.Base.Response.BaseResponse`1[[EmployeeTracking.Dto.Concrete.DepartmentDto, EmployeeTracking.Dto, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2022-07-25 00:43:30.919 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 390.367ms
+2022-07-25 00:43:30.921 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:43:30.923 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 122 - 200 - application/json;+charset=utf-8 500.1035ms
+2022-07-25 00:43:46.851 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 123
+2022-07-25 00:43:46.918 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:43:46.924 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:43:46.941 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:43:47.299 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 353.6573ms
+2022-07-25 00:43:47.301 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:43:47.302 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 123 - 200 - - 454.9388ms
+2022-07-25 00:46:03.793 +03:00 [INF] Request starting HTTP/1.1 POST http://localhost/api/department application/json 123
+2022-07-25 00:46:03.860 +03:00 [WRN] Failed to determine the https port for redirect.
+2022-07-25 00:46:03.866 +03:00 [INF] Executing endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:46:03.886 +03:00 [INF] Route matched with {action = "Post", controller = "Department"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(EmployeeTracking.Dto.Concrete.DepartmentDto) on controller EmployeeTracking.WebAPI.Controllers.DepartmentController (EmployeeTracking.WebAPI).
+2022-07-25 00:46:04.008 +03:00 [INF] Executing action method EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) - Validation state: "Valid"
+2022-07-25 00:46:17.800 +03:00 [INF] Executed action EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI) in 13908.253ms
+2022-07-25 00:46:17.806 +03:00 [INF] Executed endpoint 'EmployeeTracking.WebAPI.Controllers.DepartmentController.Post (EmployeeTracking.WebAPI)'
+2022-07-25 00:46:17.813 +03:00 [INF] Request finished HTTP/1.1 POST http://localhost/api/department application/json 123 - 200 - - 14025.0053ms

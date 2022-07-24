@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "accessType": "Gmail Login",
+    "employeeId": 1,
+    "createdAt": "2022-07-24T14:02:19.083347Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 2,
+    "accessType": "Facebook Login",
+    "employeeId": 1,
+    "createdAt": "2022-07-24T14:02:19.083347Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 3,
+    "accessType": "Linkedin Login",
+    "employeeId": 2,
+    "createdAt": "2022-07-24T14:02:19.083347Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 4,
+    "accessType": "GitHub Login",
+    "employeeId": 3,
+    "createdAt": "2022-07-24T14:02:19.083347Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 5,
+    "accessType": "Twitter Login",
+    "employeeId": 3,
+    "createdAt": "2022-07-24T14:02:19.083347Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 6,
+    "accessType": "Gmail Login",
+    "employeeId": 4,
+    "createdAt": "2022-07-24T14:02:19.083347Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 7,
+    "accessType": "Gmail Login",
+    "employeeId": 4,
+    "createdAt": "2022-07-24T14:02:19.083347Z",
+    "isDeleted": "false"
+  }
+]

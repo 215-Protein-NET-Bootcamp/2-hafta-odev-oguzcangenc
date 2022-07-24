@@ -1,3 +1,37 @@
-{
-
-}
+[
+  {
+    "id": 1,
+    "name": "Oğuzcan Genç",
+    "departmentId": 1,
+    "createdAt": "2022-07-24T14:01:50.904418Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 2,
+    "name": "Yaşar Birleşik",
+    "departmentId": 1,
+    "createdAt": "2022-07-24T14:01:50.904418Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 3,
+    "name": "Yasin Adıgüzel",
+    "departmentId": 2,
+    "createdAt": "2022-07-24T14:01:50.904418Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 4,
+    "name": "Mehmet Çavdır",
+    "departmentId": 2,
+    "createdAt": "2022-07-24T14:01:50.904418Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 5,
+    "name": "Ali Gürbüz",
+    "departmentId": 3,
+    "createdAt": "2022-07-24T14:01:50.904418Z",
+    "isDeleted": "false"
+  }
+]

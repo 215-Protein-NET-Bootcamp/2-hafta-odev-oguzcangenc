@@ -22,7 +22,7 @@ namespace EmployeeTracking.Data.Repositories.Concrete
 
         public async Task<IEnumerable<Department>> GetAllAsync()
         {
-            var sql = $"SELECT \"Id\",\"Name\",\"CreatedAt\" FROM \"Departments\" WHERE \"IsDeleted\"=false";
+            var sql = $"SELECT \"Id\",\"Name\",\"CountryId\",\"CreatedAt\" FROM \"Departments\" WHERE \"IsDeleted\"=false";
             using (var connection = _dbContext.CreateConnection())
             {
                 var result = await connection.QueryAsync<Department>(sql);
@@ -32,7 +32,7 @@ namespace EmployeeTracking.Data.Repositories.Concrete
 
         public async Task<Department> GetByIdAsync(int id)
         {
-            var query = $"SELECT \"Id\",\"Name\",\"CreatedAt\" FROM \"Departments\" WHERE \"Id\" = @Id and \"IsDeleted\"=false";
+            var query = $"SELECT \"Id\",\"Name\",\"CountryId\",\"CreatedAt\" FROM \"Departments\" WHERE \"Id\" = @Id and \"IsDeleted\"=false";
             using (var connection = _dbContext.CreateConnection())
             {
                 var result = await connection.QueryFirstAsync<Department>(query, new { id });
@@ -42,12 +42,14 @@ namespace EmployeeTracking.Data.Repositories.Concrete
 
         public async Task InsertAsync(Department entity)
         {
-            var query = $"INSERT INTO \"Departments\" (\"Name\",\"CreatedAt\",\"IsDeleted\") VALUES (@name,@created_at,@is_deleted)";
+            var query = $"INSERT INTO \"Departments\" (\"Name\",\"CreatedAt\",\"IsDeleted\",\"CountryId\") VALUES (@name,@created_at,@is_deleted,@country_id)";
 
             var parameters = new DynamicParameters();
             parameters.Add("name", entity.Name, DbType.String);
             parameters.Add("created_at", entity.CreatedAt, DbType.DateTime);
             parameters.Add("is_deleted", entity.IsDeleted, DbType.Boolean);
+            parameters.Add("country_id", entity.CountryId, DbType.Int32);
+
 
             using (var connection = _dbContext.CreateConnection())
             {

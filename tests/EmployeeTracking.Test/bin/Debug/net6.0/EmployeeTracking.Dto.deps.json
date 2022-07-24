@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "EmployeeTracking.Dto/1.0.0": {
+        "dependencies": {
+          "EmployeeTracking.Base": "1.0.0"
+        },
+        "runtime": {
+          "EmployeeTracking.Dto.dll": {}
+        }
+      },
+      "EmployeeTracking.Base/1.0.0": {
+        "runtime": {
+          "EmployeeTracking.Base.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EmployeeTracking.Dto/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EmployeeTracking.Base/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

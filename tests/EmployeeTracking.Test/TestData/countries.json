@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "France",
+    "continent": "EURO",
+    "currency": "EUR",
+    "createdAt": "2022-07-24T14:00:23.507217Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 2,
+    "name": "Germany",
+    "continent": "EURO",
+    "currency": "EUR",
+    "createdAt": "2022-07-24T14:00:23.507217Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 3,
+    "name": "Swiss",
+    "continent": "EURO",
+    "currency": "EUR",
+    "createdAt": "2022-07-24T14:00:23.507217Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 4,
+    "name": "Turkey",
+    "continent": "Türk Lira",
+    "currency": "TRY",
+    "createdAt": "2022-07-24T14:00:23.507217Z",
+    "isDeleted": "false"
+  },
+  {
+    "id":5,
+    "name": "Iraq",
+    "continent": "Iraq Lira",
+    "currency": "IRL",
+    "createdAt": "2022-07-24T14:00:23.507217Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 6,
+    "name": "Qatar",
+    "continent": "Dolar",
+    "currency": "USD",
+    "createdAt": "2022-07-24T14:00:23.507217Z",
+    "isDeleted": "false"
+  }
+]

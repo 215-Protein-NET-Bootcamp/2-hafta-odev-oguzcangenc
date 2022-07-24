@@ -18,34 +18,64 @@ namespace EmployeeTracking.WebAPI.Controllers
             _folderService = folderService;
         }
         [HttpGet]
-        public async Task<BaseResponse<IEnumerable<FolderDto>>> Get()
+        public async Task<IActionResult> Get()
         {
-            return await _folderService.GetAllAsync();
+            var response = await _folderService.GetAllAsync();
+
+            if (!response.Success)
+            {
+                return BadRequest();
+            }
+            return Ok(response);
         }
 
         [HttpGet("{id}")]
-        public async Task<BaseResponse<FolderDto>> Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            return await _folderService.GetByIdAsync(id);
+            var response = await _folderService.GetByIdAsync(id);
+
+            if (!response.Success)
+            {
+                return BadRequest();
+            }
+            return Ok(response);
         }
 
         [HttpPost]
-        public async Task<BaseResponse<FolderDto>> Post([FromBody] FolderDto folderDto)
+        public async Task<IActionResult> Post([FromBody] FolderDto folderDto)
         {
-            return await _folderService.InsertAsync(folderDto);
+            var response = await _folderService.InsertAsync(folderDto);
+
+            if (!response.Success)
+            {
+                return BadRequest();
+            }
+            return Ok(response);
         }
 
         [HttpPut("{id}")]
-        public async Task<BaseResponse<FolderDto>> Put(int id, [FromBody] FolderDto folderDto)
+        public async Task<IActionResult> Put(int id, [FromBody] FolderDto folderDto)
         {
-            return await _folderService.UpdateAsync(id, folderDto);
+            var response = await _folderService.UpdateAsync(id, folderDto);
+
+            if (!response.Success)
+            {
+                return BadRequest();
+            }
+            return Ok(response);
         }
 
-      
+
         [HttpDelete("{id}")]
-        public async Task<BaseResponse<FolderDto>> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            return await _folderService.RemoveAsync(id);
+            var response = await _folderService.RemoveAsync(id);
+
+            if (!response.Success)
+            {
+                return BadRequest();
+            }
+            return Ok(response);
         }
     }
 }

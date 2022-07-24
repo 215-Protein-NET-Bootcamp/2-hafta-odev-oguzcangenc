@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Human Resources",
+    "countryId": 1,
+    "createdAt": "2022-07-24T14:00:49.778081Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 2,
+    "name": "IT",
+    "countryId": 1,
+    "createdAt": "2022-07-24T14:00:49.778081Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 3,
+    "name": "Accountant",
+    "countryId": 2,
+    "createdAt": "2022-07-24T14:00:49.778081Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 4,
+    "name": "F&B",
+    "countryId": 2,
+    "createdAt": "2022-07-24T14:00:49.778081Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 5,
+    "name": "Warehouse",
+    "countryId": 3,
+    "createdAt": "2022-07-24T14:00:49.778081Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 6,
+    "name": "Quality Control",
+    "countryId": 3,
+    "createdAt": "2022-07-24T14:00:49.778081Z",
+    "isDeleted": "false"
+  },
+  {
+    "id": 7,
+    "name": "Security",
+    "countryId": 4,
+    "createdAt": "2022-07-24T14:00:49.778081Z",
+    "isDeleted": "false"
+  }
+]

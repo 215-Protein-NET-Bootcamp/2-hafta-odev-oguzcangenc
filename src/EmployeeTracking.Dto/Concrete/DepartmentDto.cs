@@ -10,5 +10,6 @@ namespace EmployeeTracking.Dto.Concrete
     public class DepartmentDto:BaseDto
     {
         public string Name { get; set; }
+        public int CountryId { get; set; }
     }
 }

@@ -1,9 +1,7 @@
-﻿using EmployeeTracking.Base.Response;
-using EmployeeTracking.Dto.Concrete;
+﻿using EmployeeTracking.Dto.Concrete;
 using EmployeeTracking.Service.Abstract;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace EmployeeTracking.WebAPI.Controllers
 {
@@ -17,40 +15,66 @@ namespace EmployeeTracking.WebAPI.Controllers
         {
             _departmentService = departmentService;
         }
-        // GET: api/<DepartmentController>
         [HttpGet]
-        public async Task<BaseResponse<IEnumerable<DepartmentDto>>> Get()
+        public async Task<IActionResult> Get()
         {
-            return await _departmentService.GetAllAsync();
+            var response = await _departmentService.GetAllAsync();
+
+            if (!response.Success)
+            {
+                return NotFound();
+            }
+
+            return Ok(response);
         }
 
-        // GET api/<DepartmentController>/5
         [HttpGet("{id}")]
-        public async Task<BaseResponse<DepartmentDto>> Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-           return await _departmentService.GetByIdAsync(id);
+            var response = await _departmentService.GetByIdAsync(id);
+            if (!response.Success)
+            {
+                return NotFound();
+            }
+
+            return Ok(response);
         }
 
-        // POST api/<DepartmentController>
         [HttpPost]
-        public async Task<BaseResponse<DepartmentDto>> Post([FromBody] DepartmentDto departmentDto)
+        public async Task<IActionResult> Post([FromBody] DepartmentDto departmentDto)
         {
-            return await _departmentService.InsertAsync(departmentDto);
+            var response = await _departmentService.InsertAsync(departmentDto);
+
+            if (!response.Success)
+            {
+                return BadRequest();
+            }
+
+            return Ok(response);
         }
 
-        // PUT api/<DepartmentController>/5
         [HttpPut("{id}")]
-        public async Task<BaseResponse<DepartmentDto>> Put(int id, [FromBody] DepartmentDto departmentDto)
+        public async Task<IActionResult> Put(int id, [FromBody] DepartmentDto departmentDto)
         {
             var response = await _departmentService.UpdateAsync(id, departmentDto);
-            return response;
+            if (!response.Success)
+            {
+                return BadRequest();
+            }
+
+            return Ok(response);
         }
 
-        // DELETE api/<DepartmentController>/5
         [HttpDelete("{id}")]
-        public async Task<BaseResponse<DepartmentDto>> Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-          return  await _departmentService.RemoveAsync(id);
+            var response = await _departmentService.RemoveAsync(id);
+            if (!response.Success)
+            {
+                return NotFound();
+            }
+
+            return Ok(response);
         }
     }
 }
