@@ -5,7 +5,8 @@ namespace EmployeeTracking.Data.Models
     public class Department : BaseEntity
     {
         public string Name { get; set; }
-        public virtual ICollection<Country> Countries { get; set; }
+        public int CountryId { get; set; }
+        public Country Country { get; set; }
 
     }
 }

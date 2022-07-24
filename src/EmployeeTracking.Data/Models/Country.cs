@@ -13,8 +13,7 @@ namespace EmployeeTracking.Data.Models
         public string Name { get; set; }
         public string Continent { get; set; }
         public string Currency { get; set; }
-        public int DepartmentId { get; set; }
-        public Department Department { get; set; }
+        public ICollection<Department>  Departments { get; set; }
 
     }
 }

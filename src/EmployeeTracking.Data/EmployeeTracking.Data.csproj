@@ -28,4 +28,8 @@
     <ProjectReference Include="..\EmployeeTracking.Base\EmployeeTracking.Base.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

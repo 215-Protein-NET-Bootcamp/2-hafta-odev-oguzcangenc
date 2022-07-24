@@ -30,33 +30,29 @@ namespace EmployeeTracking.Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("Available")
-                        .HasColumnType("boolean");
-
                     b.Property<string>("Continent")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                     b.Property<string>("Currency")
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<int?>("DepartmentId")
-                        .HasColumnType("integer");
-
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(false);
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("DepartmentId");
 
                     b.ToTable("Countries");
                 });
@@ -69,20 +65,26 @@ namespace EmployeeTracking.Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("Available")
-                        .HasColumnType("boolean");
+                    b.Property<int>("CountryId")
+                        .HasColumnType("integer");
 
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(false);
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("text");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CountryId");
 
                     b.ToTable("Departments");
                 });
@@ -95,20 +97,18 @@ namespace EmployeeTracking.Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<bool>("Available")
-                        .HasColumnType("boolean");
-
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
 
                     b.Property<int>("DepartmentId")
                         .HasColumnType("integer");
 
-                    b.Property<int?>("FolderId")
-                        .HasColumnType("integer");
-
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(false);
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -117,8 +117,6 @@ namespace EmployeeTracking.Data.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("DepartmentId");
-
-                    b.HasIndex("FolderId");
 
                     b.ToTable("Employees");
                 });
@@ -135,25 +133,35 @@ namespace EmployeeTracking.Data.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
-                    b.Property<bool>("Available")
-                        .HasColumnType("boolean");
-
                     b.Property<DateTime>("CreatedAt")
-                        .HasColumnType("timestamp with time zone");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("timestamp with time zone")
+                        .HasDefaultValueSql("CURRENT_TIMESTAMP");
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("integer");
 
                     b.Property<bool>("IsDeleted")
-                        .HasColumnType("boolean");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("boolean")
+                        .HasDefaultValue(false);
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId");
 
                     b.ToTable("Folders");
                 });
 
-            modelBuilder.Entity("EmployeeTracking.Data.Models.Country", b =>
+            modelBuilder.Entity("EmployeeTracking.Data.Models.Department", b =>
                 {
-                    b.HasOne("EmployeeTracking.Data.Models.Department", null)
-                        .WithMany("Countries")
-                        .HasForeignKey("DepartmentId");
+                    b.HasOne("EmployeeTracking.Data.Models.Country", "Country")
+                        .WithMany("Departments")
+                        .HasForeignKey("CountryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Country");
                 });
 
             modelBuilder.Entity("EmployeeTracking.Data.Models.Employee", b =>
@@ -164,21 +172,28 @@ namespace EmployeeTracking.Data.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EmployeeTracking.Data.Models.Folder", null)
-                        .WithMany("Employees")
-                        .HasForeignKey("FolderId");
-
                     b.Navigation("Department");
-                });
-
-            modelBuilder.Entity("EmployeeTracking.Data.Models.Department", b =>
-                {
-                    b.Navigation("Countries");
                 });
 
             modelBuilder.Entity("EmployeeTracking.Data.Models.Folder", b =>
                 {
-                    b.Navigation("Employees");
+                    b.HasOne("EmployeeTracking.Data.Models.Employee", "Employee")
+                        .WithMany("Folders")
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+                });
+
+            modelBuilder.Entity("EmployeeTracking.Data.Models.Country", b =>
+                {
+                    b.Navigation("Departments");
+                });
+
+            modelBuilder.Entity("EmployeeTracking.Data.Models.Employee", b =>
+                {
+                    b.Navigation("Folders");
                 });
 #pragma warning restore 612, 618
         }

@@ -24,17 +24,8 @@ namespace EmployeeTracking.Data.Repositories.Concrete
             var response = await _context.Employees.Where(e => e.Id == entityId)
                                                   .Include(employee => employee.Folders)
                                                   .Include(employee => employee.Department)
-                                                  .ThenInclude(department => department.Countries.Where(countries => countries.IsDeleted == false)).Select(e => new Employee
-                                                  {
-                                                      Name = e.Name,
-                                                      Available = e.Available,
-                                                      CreatedAt = e.CreatedAt,
-                                                      Department = e.Department.IsDeleted==false ? e.Department:null,
-                                                      DepartmentId = e.DepartmentId,
-                                                      Folders = e.Folders.Where(f=>f.IsDeleted ==false).ToList(),
-                                                      Id = e.Id,
-                                                      IsDeleted = e.IsDeleted
-                                                  }).FirstOrDefaultAsync();
+                                                  .ThenInclude(employee => employee.Country)
+                                                  .FirstOrDefaultAsync();
             return response;
         }
     }

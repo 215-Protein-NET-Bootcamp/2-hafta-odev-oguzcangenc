@@ -12,6 +12,5 @@ namespace EmployeeTracking.Dto.Concrete
         public string Name { get; set; }
         public string Continent { get; set; }
         public string Currency { get; set; }
-        public int DepartmentId { get; set; }
     }
 }

@@ -13,7 +13,6 @@ namespace EmployeeTracking.Service.MapperProfile
             CreateMap<Folder, FolderDto>().ReverseMap();
             CreateMap<Country, CountryDto>().ReverseMap();
             CreateMap<Department, DepartmentDto>().ReverseMap();
-            CreateMap<Department, DepartmentAddDto>().ReverseMap();
         }
     }
 }

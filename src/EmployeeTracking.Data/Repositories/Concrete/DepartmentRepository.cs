@@ -42,13 +42,12 @@ namespace EmployeeTracking.Data.Repositories.Concrete
 
         public async Task InsertAsync(Department entity)
         {
-            var query = $"INSERT INTO \"Departments\" (\"Name\",\"CreatedAt\",\"IsDeleted\",\"Available\") VALUES (@name,@created_at,@is_deleted,@available)";
+            var query = $"INSERT INTO \"Departments\" (\"Name\",\"CreatedAt\",\"IsDeleted\") VALUES (@name,@created_at,@is_deleted)";
 
             var parameters = new DynamicParameters();
             parameters.Add("name", entity.Name, DbType.String);
             parameters.Add("created_at", entity.CreatedAt, DbType.DateTime);
             parameters.Add("is_deleted", entity.IsDeleted, DbType.Boolean);
-            parameters.Add("available", entity.Available, DbType.Boolean);
 
             using (var connection = _dbContext.CreateConnection())
             {

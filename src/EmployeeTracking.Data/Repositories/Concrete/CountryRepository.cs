@@ -23,7 +23,7 @@ namespace EmployeeTracking.Data.Repositories.Concrete
 
         public async Task<IEnumerable<Country>> GetAllAsync()
         {
-            var sql = $"SELECT \"Id\",\"Name\",\"DepartmentId\",\"Continent\",\"Currency\",\"CreatedAt\" FROM \"Countries\" WHERE \"IsDeleted\"=false";
+            var sql = $"SELECT \"Id\",\"Name\",\"Continent\",\"Currency\",\"CreatedAt\" FROM \"Countries\" WHERE \"IsDeleted\"=false";
             using (var connection = _dbContext.CreateConnection())
             {
                 var result = await connection.QueryAsync<Country>(sql);
@@ -33,7 +33,7 @@ namespace EmployeeTracking.Data.Repositories.Concrete
 
         public async Task<Country> GetByIdAsync(int id)
         {
-            var query = $"SELECT \"Id\",\"Name\",\"DepartmentId\",\"Continent\",\"Currency\",\"CreatedAt\" FROM \"Countries\" WHERE \"Id\" = @Id and \"IsDeleted\"=false";
+            var query = $"SELECT \"Id\",\"Name\",\"Continent\",\"Currency\",\"CreatedAt\" FROM \"Countries\" WHERE \"Id\" = @Id and \"IsDeleted\"=false";
             using (var connection = _dbContext.CreateConnection())
             {
                 var result = await connection.QueryFirstAsync<Country>(query, new { id });
@@ -43,16 +43,14 @@ namespace EmployeeTracking.Data.Repositories.Concrete
 
         public async Task InsertAsync(Country entity)
         {
-            var query = $"INSERT INTO \"Countries\" (\"Name\",\"Continent\",\"Currency\",\"DepartmentId\",\"CreatedAt\",\"IsDeleted\",\"Available\") VALUES (@name,@continent,@currency,@department_id,@created_at,@is_deleted,@available)";
+            var query = $"INSERT INTO \"Countries\" (\"Name\",\"Continent\",\"Currency\",\"CreatedAt\",\"IsDeleted\") VALUES (@name,@continent,@currency,@created_at,@is_deleted)";
 
             var parameters = new DynamicParameters();
             parameters.Add("name", entity.Name, DbType.String);
             parameters.Add("continent", entity.Continent, DbType.String);
             parameters.Add("currency", entity.Currency, DbType.String);
-            parameters.Add("department_id", entity.DepartmentId);
             parameters.Add("created_at", entity.CreatedAt, DbType.DateTime);
             parameters.Add("is_deleted", entity.IsDeleted, DbType.Boolean);
-            parameters.Add("available", entity.Available, DbType.Boolean);
 
             using (var connection = _dbContext.CreateConnection())
             {
@@ -88,17 +86,16 @@ namespace EmployeeTracking.Data.Repositories.Concrete
 
         public async void Update(Country entity)
         {
-            var query = $"UPDATE \"Countries\" SET \"Name\" =@name, \"Continent\"=@continent,\"Currency\"=@currency,\"DepartmentId\"=@department_id  WHERE \"Id\" =@Id ";
+            var query = $"UPDATE \"Countries\" SET \"Name\" =@name, \"Continent\"=@continent,\"Currency\"=@currency  WHERE \"Id\" =@Id ";
             var parameters = new DynamicParameters();
             parameters.Add("name", entity.Name, DbType.String);
             parameters.Add("continent", entity.Continent, DbType.String);
             parameters.Add("currency", entity.Currency, DbType.String);
-            parameters.Add("department_id", entity.DepartmentId);
             parameters.Add("Id", entity.Id);
             using (var connection = _dbContext.CreateConnection())
             {
                 connection.Open();
-                await connection.ExecuteAsync(query,parameters);
+                await connection.ExecuteAsync(query, parameters);
             }
         }
     }
